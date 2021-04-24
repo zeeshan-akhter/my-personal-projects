@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pen Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <div id="container" class="container">
+    <header id="header" class="header">
+        <h1 id="title">Code Pen Survey Form</h1>
+        <p id="description" class="description">
+            Thanks for choosing us.Please help us how can we improve
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+           <label id="name-label">Name</label>
+            <input
+            id="name"
+            class="form-control"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="email-label">Email</label>
+            <input
+            id="email"
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+            />
+        </div>
+
+        <div class="form-group">
+            <label id="number-label">Age<span>(optional)</span></label>
+            <input
+            id="number"
+            class="form-control"
+            type="number"
+            name="Age"
+            min="10"
+            max="99"
+            placeholder="Age"
+            />
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes you?</p>
+            <select id="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend codepen to a friend?</p>
+            <label>
+                <input
+                class="input-radio"
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                checked
+                />Definitely
+            </label>
+            <label>
+                <input
+                class="input-radio"
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                checked
+                />Maybe
+            </label>
+            <label>
+                <input
+                class="input-radio"
+                name="user-recommend"
+                value="No"
+                type="radio"
+                checked
+                />No
+            </label>
+            <label>
+                <input
+                class="input-radio"
+                name="user-recommend"
+                value="Not Sure"
+                type="radio"
+                checked
+                />Not Sure
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite in Code Pen?</p>
+            <select name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="pen">Pens</option>
+                <option value="project">Projects</option>
+                <option value="collection">Collections</option>
+                <option value="community">Community</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>
+                What we can improve?
+                <span class="clue">(Tick stuffs that apply)</span>
+            </p>
+
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Challenges"
+                type="checkbox"
+                />Challenges
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="Prefer"
+                value="Pen"
+                type="checkbox"
+                />Pen
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Project"
+                type="checkbox"
+                />Project
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Collections"
+                type="checkbox"
+                />Collections
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Community"
+                type="checkbox"
+                />Community
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Dashboard"
+                type="checkbox"
+                />Dashboard
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Editor-view"
+                type="checkbox"
+                />Editor view
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Details-view"
+                type="checkbox"
+                />Details view
+            </label>
+            <label>
+                <input
+                class="input-checkbox"
+                name="prefer"
+                value="Full-page-view"
+                type="checkbox"
+                />Full page view
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Any Comments or suggestions?</p>
+            <textarea
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here...."
+            ></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
